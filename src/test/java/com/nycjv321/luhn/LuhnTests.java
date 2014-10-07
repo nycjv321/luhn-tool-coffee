@@ -27,6 +27,11 @@ public class LuhnTests {
     }
 
     @Test
+    public void testGetCheckDigitNonExistingImplicit() {
+        assertEquals(Luhn.getCheckDigit(7992739871l), 3l);
+    }
+
+    @Test
     public void testGetCheckDigitNonExisting() {
         assertEquals(Luhn.getCheckDigit(7992739871l, false), 3l);
     }
