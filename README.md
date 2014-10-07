@@ -13,6 +13,9 @@ I wrote this tool out of curiousity. Its not written for efficiency, instead the
 
 Changelog
 ----
+1.202
+
+  - Added a simple POC UI, switching to FXML in the next version
 
 1.2
 
