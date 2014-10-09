@@ -39,3 +39,4 @@ Icon
 # IntelliJ Configuration
 .idea
 *.class
+*.iml

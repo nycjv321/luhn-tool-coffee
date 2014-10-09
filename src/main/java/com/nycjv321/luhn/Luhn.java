@@ -69,4 +69,8 @@ public final class Luhn {
         return getCheckDigit(accountNumber, false);
     }
 
+    public static long getCheckDigit(String accountNumber) {
+        return getCheckDigit(Long.valueOf(accountNumber), false);
+    }
+
 }
