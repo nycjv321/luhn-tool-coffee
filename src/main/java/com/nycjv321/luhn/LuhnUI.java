@@ -1,29 +1,21 @@
 package com.nycjv321.luhn;
 
-import com.nycjv321.utilities.JavaFXUtilities;
-import com.nycjv321.utilities.NumberUtilities;
+import com.nycjv321.utilities.FXUtilities;
 import javafx.application.Application;
-import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.control.TitledPane;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.Priority;
-import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
-
-import static javafx.geometry.Pos.CENTER;
 
 /**
  * POC UI
  * Created by Javier on 10/6/2014.
  */
-public class LuhnUI extends Application implements JavaFXUtilities {
+public class LuhnUI extends Application implements FXUtilities {
     private TextField inputTextField;
     private Label label;
     private Button validate;
@@ -39,16 +31,6 @@ public class LuhnUI extends Application implements JavaFXUtilities {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
-
-    private GridPane createGrid() {
-        GridPane grid = new GridPane();
-        grid.setAlignment(CENTER);
-        grid.setHgap(5);
-        grid.setVgap(5);
-        grid.setPadding(new Insets(5, 5, 5, 5));
-        return grid;
-    }
-
 
     private GridPane createValidatorView() {
         GridPane grid = createGrid();
