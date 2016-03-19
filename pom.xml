@@ -31,7 +31,7 @@
         <dependency>
             <groupId>com.nycjv321</groupId>
             <artifactId>utilities</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.4</version>
         </dependency>
     </dependencies>
 </project>
